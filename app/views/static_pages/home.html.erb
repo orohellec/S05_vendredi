@@ -1,1 +1,7 @@
 <h1>Bienvenue sur la page d'accueil ou home pour les intimes</h1>
+
+<% if session[:user_id] == nil %>
+  <p>Il vous faut créer un compte pour accéder à la liste</p>
+<% else %>
+  <p>Voici le précieu lien: <a href="/monclub" id="club_link">la fameuse liste!</a></p>
+<% end %>

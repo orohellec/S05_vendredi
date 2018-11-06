@@ -6,21 +6,21 @@
     <%= form_for(@user, url: {action: "create"}) do |f| %>
 
       <%= f.label :first_name %>
-      <%= f.text_field :first_name, class: 'form-control' %>
+      <%= f.text_field :first_name, class: 'form-control', id: 'f_name' %>
 
       <%= f.label :last_name %>
-      <%= f.text_field :last_name, class: 'form-control' %>
+      <%= f.text_field :last_name, class: 'form-control', id: 'l_name' %>
 
       <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
+      <%= f.email_field :email, class: 'form-control', id: 'email'%>
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.password_field :password, class: 'form-control', id: 'password' %>
 
       <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <%= f.password_field :password_confirmation, class: 'form-control', id: 'confirm_password' %>
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+      <%= f.submit "Create my account", class: "btn btn-primary", id: "new_user" %>
     <% end %>
   </div>
 </div>
